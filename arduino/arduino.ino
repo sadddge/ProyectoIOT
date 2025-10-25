@@ -217,7 +217,7 @@ void loop() {
 
   buzzerUpdate();
 
-  // 3. Recepción de mensajes
+  // 2. Recepción de mensajes
   if (Serial.available()) {
     String input = Serial.readStringUntil('\n');
     processCommand(input);
